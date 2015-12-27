@@ -1,0 +1,94 @@
+vim keyshut:左移h、右移l、下移j、上移k
+vim keyshut:向下翻页ctrl + f，向上翻页ctrl + b
+vim keyshut:向下翻半页ctrl + d，向上翻半页ctrl + u
+vim keyshut:移动到行尾$，移动到行首0（数字），移动到行首第一个字符处^
+vim keyshut:移动光标到下一个句子 ），移动光标到上一个句子（
+vim keyshut:移动到段首{，移动到段尾}
+vim keyshut:移动到下一个词w，移动到上一个词b
+vim keyshut:移动到文档开始gg，移动到文档结束G
+vim keyshut:移动到匹配的{}.().[]处%
+vim keyshut:跳到第n行 ngg 或 nG 或 :n
+vim keyshut:移动光标到屏幕顶端H，移动到屏幕中间M，移动到底部L
+vim keyshut:读取当前字符，并移动到本屏幕内下一次出现的地方 *
+vim keyshut:读取当前字符，并移动到本屏幕内上一次出现的地方 #
+vim keyshut:光标向后查找关键字 #或者g#
+vim keyshut:光标向前查找关键字 *或者g*
+vim keyshut:当前行查找字符 fx, Fx, tx, Tx
+vim keyshut:基本替换 :s/s1/s2 （将下一个s1替换为s2）
+vim keyshut:全部替换 :%s/s1/s2
+vim keyshut:只替换当前行 :s/s1/s2/g
+vim keyshut:替换某些行 :n1,n2 s/s1/s2/g
+vim keyshut:搜索模式为 /string，搜索下一处为n，搜索上一处为N
+vim keyshut:制定书签 mx, 但是看不到书签标记，而且只能用小写字母
+vim keyshut:移动到某标签处 `x，1旁边的键
+vim keyshut:移动到上次编辑文件的位置 `.
+vim keyshut:：.代表一个任意字符 *代表一个或多个字符的重复
+         
+vim keyshut:光标后插入a, 行尾插入A
+vim keyshut:后插一行插入o，前插一行插入O
+vim keyshut:删除字符插入s， 删除正行插入S
+vim keyshut:光标前插入i，行首插入I
+vim keyshut:删除一行dd，删除后进入插入模式cc或者S
+vim keyshut:删除一个单词dw，删除一个单词进入插入模式cw
+vim keyshut:删除一个字符x或者dl，删除一个字符进入插入模式s或者cl
+vim keyshut:粘贴p，交换两个字符xp，交换两行ddp
+vim keyshut:复制y，复制一行yy
+vim keyshut:撤销u，重做ctrl + r，重复.
+vim keyshut:智能提示 ctrl + n 或者 ctrl + p
+vim keyshut:删除motion跨过的字符，删除并进入插入模式 c{motion}
+vim keyshut:删除到下一个字符跨过的字符，删除并进入插入模式，不包括x字符 ctx
+vim keyshut:删除当前字符到下一个字符处的所有字符，并进入插入模式，包括x字符，cfx
+vim keyshut:删除motion跨过的字符，删除但不进入插入模式 d{motion}
+vim keyshut:删除motion跨过的字符，删除但不进入插入模式，不包括x字符 dtx
+vim keyshut:删除当前字符到下一个字符处的所有字符，包括x字符 dfx
+vim keyshut:如果只是复制的情况时，将12-17条中的c或d改为y
+vim keyshut:删除到行尾可以使用D或C
+vim keyshut:拷贝当前行 yy或者Y
+vim keyshut:删除当前字符 x
+vim keyshut:粘贴 p
+vim keyshut:可以使用多重剪切板，查看状态使用:reg，使用剪切板使用”，例如复制到w寄存器，”wyy，或者使用可视模式v”wy
+vim keyshut:重复执行上一个作用使用.
+vim keyshut:使用数字可以跨过n个区域，如y3x，会拷贝光标到第三个x之间的区域，3j向下移动3行
+vim keyshut:在编写代码的时候可以使用]p粘贴，这样可以自动进行代码缩进
+vim keyshut: >> 缩进所有选择的代码
+vim keyshut: << 反缩进所有选择的代码
+vim keyshut:gd 移动到光标所处的函数或变量的定义处
+vim keyshut:K 在man里搜索光标所在的词
+vim keyshut:合并两行 J
+vim keyshut:若不想保存文件，而重新打开 :e!
+vim keyshut:若想打开新文件 :e filename，然后使用ctrl + ^进行文件切换
+四、窗口操作
+vim keyshut:分隔一个窗口:split或者:vsplit
+vim keyshut:创建一个窗口:new或者:vnew
+vim keyshut:在新窗口打开文件:sf {filename}
+vim keyshut:关闭当前窗口:close
+vim keyshut:仅保留当前窗口:only
+vim keyshut:到左边窗口 ctrl + w, h
+vim keyshut:到右边窗口 ctrl + w, l
+vim keyshut:到上边窗口 ctrl + w, k
+vim keyshut:到下边窗口 ctrl + w, j
+vim keyshut:到顶部窗口 ctrl + w, t
+vim keyshut:到底部窗口 ctrl + w, b
+vim keyshut:开始记录宏操作q[a-z]，按q结束，保存操作到寄存器[a-z]中
+vim keyshut:@[a-z]执行寄存器[a-z]中的操作
+vim keyshut:@@执行最近一次记录的宏操作
+vim keyshut:进入块可视模式 ctrl + v
+vim keyshut:进入字符可视模式 v
+vim keyshut:进入行可视模式 V
+vim keyshut:删除选定的块 d
+vim keyshut:删除选定的块然后进入插入模式 c
+vim keyshut:在选中的块同是插入相同的字符 I<String>ESC
+vim keyshut:[[ 向前跳到顶格第一个{  
+vim keyshut:[] 向前跳到顶格第一个}
+vim keyshut:]] 向后跳到顶格的第一个{
+vim keyshut:]] 向后跳到顶格的第一个}
+vim keyshut:[{ 跳到本代码块的开头
+vim keyshut:]} 跳到本代码块的结尾
+vim keyshut:挂起Vim ctrl + z 或者 :suspend
+vim keyshut:查看任务 在shell中输入 jobs
+vim keyshut:恢复任务 fg [job number]（将后台程序放到前台）或者 bg [job number]（将前台程序放到后台）
+vim keyshut:执行shell命令 :!command
+vim keyshut:开启shell命令 :shell，退出该shell exit
+vim keyshut:保存vim状态 :mksession name.vim
+vim keyshut:恢复vim状态 :source name.vim
+vim keyshut:启动vim时恢复状态 vim -S name.vim
